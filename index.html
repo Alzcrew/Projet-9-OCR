@@ -11,6 +11,41 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" media="print" onload="this.media='all'">
+  <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "name": "Nina Carducci",
+  "telephone": "05 56 67 78 89",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "68 avenue Alsace-Lorraine",
+    "addressLocality": "Bordeaux",
+    "postalCode": "33200"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "05 56 67 78 89",
+    "contactType": "customer service",
+    "areaServed": "FR",
+    "availableLanguage": "French",
+    "contactOption": "HearingImpairedSupported",
+    "hoursAvailable": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "10:00",
+      "closes": "19:00"
+    }
+  }
+}
+</script>
+
 </head>
 <body>
   <header role="banner" class="top-header">
@@ -143,11 +178,11 @@
 			<h3>Une question ? Une demande de devis ?</h3>
 			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 			<form action="" method="post">
-				<label>Nom</label>
+				<label for="Nom">Nom</label>
 				<input type="text" name="nom" id="nom">
-				<label>Email</label>
+				<label for="Email">Email</label>
 				<input type="email" name="email" id="email">
-				<label>Message</label>
+				<label for="Message">Message</label>
 				<textarea name="message" id="message" cols="30" rows="10"></textarea>
 				<input type="submit" value="Envoyer"/>
 			</form>
@@ -156,7 +191,9 @@
 			<img src="./assets/images/camera.webp" alt="Camera" loading="lazy">
 		</div>
 	</div>
+	
 </footer>
+
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
 <script src="./assets/maugallery.js"></script>
